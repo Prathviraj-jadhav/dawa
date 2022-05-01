@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>User profile
+    
+  </title>
+  <link rel="stylesheet" href="/Asset/Css/Profile Use.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<!--TITLE-->
+<title>Profiler Name || User Profile</title>
+
+<!--ICON-->
+<link rel="shortcut icon" href="/DevanagariBrahmi/logo.png">
+
+<!--META TAGS-->
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="author" content="Team Bboysdreamsfell">
+<meta name="description" content="">
+<meta name="keywords" content="">
+<meta property="og:locale" content="en_US" />
+<meta property="og:url" content="" />
+<meta property="og:site_name" content="Profiler Name || Aggregator Profile" />
+
+<!--EXTERNAL CSS-->
+<link rel="stylesheet" href="css/style.css">
+
+
+
+<!--PLUGIN-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.5/css/swiper.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+
+<!--FONT AWESOME-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<!--GOOGLE FONTS-->
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Odibee+Sans&family=Oswald:wght@300;400&family=Ubuntu:wght@700&display=swap" rel="stylesheet"> 
+<link href="https://fonts.googleapis.com/css2?family=Pattaya&display=swap" rel="stylesheet"> 
+<body>
+
+
+<div class="container">
+<div class="alert">
+  <span class="closebtn">&times;</span>  
+  <strong>NOTE!</strong> Please verify your account. <a href="#" style="color:#7ed321;">Resend Verification Code</a>
+</div>
+<table>
+<tr>
+  <td>
+  <section>
+  <label for="fileToUpload">
+  <i class="fa fa-camera"></i>
+  <input type="file" id="fileToUpload" style="visibility:hidden;" accept=".png,.jpg,jpeg,.PNG,.JPEG" name="fileToUpload" onchange="document.getElementById('blah').src = window.URL.createObjectURL(this.files[0])">
+  </label>
+  <img src="https://i.ibb.co/yNGW4gg/avatar.png" id="blah" alt="Avatar">
+  </section>
+  <h1>XYZ</h1>
+  <h3>Pharmacist</h3>
+  </td>
+  <td>
+  <ul>
+    <li><b>Full name</b> <input type="text" name="fname" id="fname" maxlength="100" value="XYZ" required /> <i class="fa fa-edit" id="edit1" onclick="document.getElementById('fname').style.pointerEvents='auto';document.getElementById('fname').focus();this.style.display='none'; document.getElementById('check1').style.display='inline-block';"></i> <i class="fa fa-check" style="display:none;" id="check1" onclick="document.getElementById('edit1').style.display='inline-block';this.style.display='none';document.getElementById('fname').style.pointerEvents='none';"></i></li>
+  
+    <li><b>Email name</b> <input type="email" name="ename" id="ename" maxlength="100" value="XYZ@gmail.com" required /> <i class="fa fa-edit" id="edit" onclick="document.getElementById('ename').style.pointerEvents='auto';document.getElementById('ename').focus();this.style.display='none'; document.getElementById('check').style.display='inline-block';"></i> <i class="fa fa-check" style="display:none;" id="check" onclick="document.getElementById('edit').style.display='inline-block';this.style.display='none';document.getElementById('ename').style.pointerEvents='none';"></i></li>
+    
+    
+  
+  <li><b>Contact number</b> <input type="tel" name="mobile" id="mobile" maxlength="10" value="0123456789" required /> <i class="fa fa-edit" id="edit2" onclick="document.getElementById('mobile').style.pointerEvents='auto';document.getElementById('mobile').focus();this.style.display='none'; document.getElementById('check2').style.display='inline-block';"></i> <i class="fa fa-check" style="display:none;" id="check2" onclick="document.getElementById('edit2').style.display='inline-block';document.getElementById('mobile').style.pointerEvents='none';this.style.display='none';"></i></li>
+  <li><b>Gender</b><select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
+    <option selected>Select Gender</option>
+    <option value="1">Male</option>
+    <option value="2">Female</option>
+    <option value="3">other</option>
+  </select>
+  
+  <li><b>Address 1</b> <input type="text" name="address" id="address" maxlength="250" value="xyz coloany xyz road"> <i class="fa fa-edit" id="edit3" onclick="document.getElementById('address').style.pointerEvents='auto';document.getElementById('address').focus();this.style.display='none'; document.getElementById('check3').style.display='inline-block';"></i> <i class="fa fa-check" style="display:none;" id="check3" onclick="document.getElementById('edit3').style.display='inline-block';document.getElementById('address').style.pointerEvents='none';this.style.display='none';"></i></li>
+  <li><b>State</b> <input type="text" name="State" id="State" maxlength="250" value="Maharashtra"> <i class="fa fa-edit" id="edit4" onclick="document.getElementById('State').style.pointerEvents='auto';document.getElementById('State').focus();this.style.display='none'; document.getElementById('check4').style.display='inline-block';"></i> <i class="fa fa-check" style="display:none;" id="check4" onclick="document.getElementById('edit4').style.display='inline-block';document.getElementById('Sate').style.pointerEvents='none';this.style.display='none';"></i></li>
+  <li><b>Pincode</b> <input type="Pin" name="Pin" id="Pin" maxlength="06" value="413512" required /> <i class="fa fa-edit" id="edit5" onclick="document.getElementById('Pin').style.pointerEvents='auto';document.getElementById('Pin').focus();this.style.display='none'; document.getElementById('check5').style.display='inline-block';"></i> <i class="fa fa-check" style="display:none;" id="check5" onclick="document.getElementById('edit5').style.display='inline-block';document.getElementById('Pin').style.pointerEvents='none';this.style.display='none';"></i></li>
+  <li><b>Family Pharmacy</b> <input type="tel" name="License" id="License" maxlength="10" value="Shoonyatvam Pharmacy" required /> <i class="fa fa-edit" id="edit7" onclick="document.getElementById('License').style.pointerEvents='auto';document.getElementById('License').focus();this.style.display='none'; document.getElementById('check7').style.display='inline-block';"></i> <i class="fa fa-check" style="display:none;" id="check7" onclick="document.getElementById('edit7').style.display='inline-block';document.getElementById('License').style.pointerEvents='none';this.style.display='none';"></i></li>
+  
+
+
+<li> <b>Select state</b>
+<select  name="state" id="state" class="form-control">
+<option value="Andhra Pradesh">Andhra Pradesh</option>
+<option value="Andaman and Nicobar Islands">Andaman and Nicobar Islands</option>
+<option value="Arunachal Pradesh">Arunachal Pradesh</option>
+<option value="Assam">Assam</option>
+<option value="Bihar">Bihar</option>
+<option value="Chandigarh">Chandigarh</option>
+<option value="Chhattisgarh">Chhattisgarh</option>
+<option value="Dadar and Nagar Haveli">Dadar and Nagar Haveli</option>
+<option value="Daman and Diu">Daman and Diu</option>
+<option value="Delhi">Delhi</option>
+<option value="Lakshadweep">Lakshadweep</option>
+<option value="Puducherry">Puducherry</option>
+<option value="Goa">Goa</option>
+<option value="Gujarat">Gujarat</option>
+<option value="Haryana">Haryana</option>
+<option value="Himachal Pradesh">Himachal Pradesh</option>
+<option value="Jammu and Kashmir">Jammu and Kashmir</option>
+<option value="Jharkhand">Jharkhand</option>
+<option value="Karnataka">Karnataka</option>
+<option value="Kerala">Kerala</option>
+<option value="Madhya Pradesh">Madhya Pradesh</option>
+<option value="Maharashtra">Maharashtra</option>
+<option value="Manipur">Manipur</option>
+<option value="Meghalaya">Meghalaya</option>
+<option value="Mizoram">Mizoram</option>
+<option value="Nagaland">Nagaland</option>
+<option value="Odisha">Odisha</option>
+<option value="Punjab">Punjab</option>
+<option value="Rajasthan">Rajasthan</option>
+<option value="Sikkim">Sikkim</option>
+<option value="Tamil Nadu">Tamil Nadu</option>
+<option value="Telangana">Telangana</option>
+<option value="Tripura">Tripura</option>
+<option value="Uttar Pradesh">Uttar Pradesh</option>
+<option value="Uttarakhand">Uttarakhand</option>
+<option value="West Bengal">West Bengal</option>
+</select>
+</li><br>
+
+<li><b>Health History</b> <input type="tel" name="FSSAI" id="FSSAI" maxlength="10" value="Health History" required /> <i class="fa fa-edit" id="edit9" onclick="document.getElementById('FSSAI').style.pointerEvents='auto';document.getElementById('FSSAI').focus();this.style.display='none'; document.getElementById('check9').style.display='inline-block';"></i> <i class="fa fa-check" style="display:none;" id="check9" onclick="document.getElementById('edit9').style.display='inline-block';document.getElementById('mobile').style.pointerEvents='none';this.style.display='none';"></i></li>
+  <li><b>Education</b> <input type="text" name="Education" id="Education" maxlength="100" value="Education" required /> <i class="fa fa-edit" id="edit10" onclick="document.getElementById('Education').style.pointerEvents='auto';document.getElementById('Education').focus();this.style.display='none'; document.getElementById('check10').style.display='inline-block';"></i> <i class="fa fa-check" style="display:none;" id="check10" onclick="document.getElementById('edit10').style.display='inline-block';this.style.display='none';document.getElementById('Education').style.pointerEvents='none';"></i></li>
+  <li><b>Experience</b> <input type="text" name="Experience" id="Experience" maxlength="100" value="Experience" required /> <i class="fa fa-edit" id="edit11" onclick="document.getElementById('Experience').style.pointerEvents='auto';document.getElementById('Experience').focus();this.style.display='none'; document.getElementById('check11').style.display='inline-block';"></i> <i class="fa fa-check" style="display:none;" id="check11" onclick="document.getElementById('edit11').style.display='inline-block';this.style.display='none';document.getElementById('Education').style.pointerEvents='none';"></i></li>
+ 
+</ul>
+</td>
+</tr>
+<tr>
+<td class="section2">
+
+</select>
+</li>
+<div class="mt-5 text-center"><button class="btn btn-primary profile-button" type="button">Save Profile</button></div>
+
+</ul>
+<button class="btn">UPDATE</button> <button class="btn">DELETE</button>
+</section>
+</div>
+</td>
+</tr>
+</table>
+</div>
+
+
+<!--JAVASCRIPT-->
+<script src="js/custom.js"></script>
+<script>
+function editdetails2(){
+}
+
+var close = document.getElementsByClassName("closebtn");
+var i;
+
+for (i = 0; i < close.length; i++) {
+  close[i].onclick = function(){
+    var div = this.parentElement;
+    div.style.opacity = "0";
+    setTimeout(function(){ div.style.display = "none"; }, 600);
+  }
+}
+</script>
+</body>
+</html>
+<!-- partial -->
+  
+</body>
+</html>
